@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aire</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
 </head>
 
 <body>
@@ -21,6 +22,25 @@
     <button class="float-btn" id="openModal">
         Como usar?
     </button>
+    <!-- modal -->
+     <div class="modal" id="gestureModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">
+                &times;
+            </span>
+            <h2>Comandos por gestos.</h2>
+            <div class="card-container">
+                <div class="gestureCard">
+                    <img src="" alt="gesto-1">
+                    <p><strong>mão aberta</strong>avança</p>
+                </div>
+            </div>
+        </div>
+     </div>
+     <video id="video" autoplay></video>
+     <div id="status">
+        inicializando...
+     </div>
     <script src="main.js"></script>
 </body>
 
